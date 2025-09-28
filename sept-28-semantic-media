@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>HTML Hyperlinks: Text, Image, Audio, Video</title>
+</head>
+<body>
+  <header>
+    <h1>WebPage Assignment</h1>
+    <p>
+      Shows two semantic elements (header, article) and two non-semantic elements (div, span).
+    </p>
+  </header>
+
+  <!-- Semantic element 2: article -->
+  <article>
+    <h2>1. Text hyperlink</h2>
+    <p>
+      Simple text link. Opens in a new tab.
+    </p>
+    <p>
+      <a href="https://example.com" target="_blank">Visit example.com (text link)</a>
+    </p>
+
+    <h2>2. Image hyperlink</h2>
+    <p>
+      Click the image to open the full-size file.
+    </p>
+    <div class="row">
+      <a href="https://www.w3schools.com/html/pic_trulli.jpg">
+        <img src="https://www.w3schools.com/html/pic_trulli.jpg" alt="Trulli" />
+    </a>
+    <div>
+      <p>
+        Or use a text link for the same image:
+      </p>
+      <a href="https://www.w3schools.com/html/pic_trulli.jpg">Open full image</a>
+    </div>
+  </div>
+
+  <h2>3. Audio hyperlink</h2>
+  <p>
+    Link that points to an audio file and a player to preview it.
+  </p>
+  <p>
+    <a href="https://www.w3schools.com/html/horse.mp3" target="_blank">Open audio file (MP3)</a>
+  </p>
+  <audio controls src="https://www.w3schools.com/html/horse.mp3">Your browser does not support the audio element.</audio>
+
+  <h2>4. Video hyperlink</h2>
+  <p>
+    Link to a video file and an embedded player.
+  </p>
+  <p>
+    <a href="https://www.w3schools.com/html/mov_bbb.mp4" target="_blank" rel="noopener noreferrer">Open MP4 in new tab</a>
+  </p>
+  <video controls width="320" src="https://www.w3schools.com/html/mov_bbb.mp4">Your browser does not support the video element.</video>
+
+  <h2>5. Using a span (non-semantic inline element)</h2>
+  <p>
+    Inline styling and a small inline link. <span>Note:</span> the span itself is not a link. It contains one.
+  </p>
+  <p>
+    <span>Find more: </span><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">MDN HTML docs</a>
+  </p>
+
+  <h2>6. Using a div (non-semantic block element)</h2>
+  <div>
+    This is a div element content
+  </div>
+</article>
+
+<footer>
+  <p>
+    This is a footer element 
+  </p>
+</footer>
+
+</body>
+</html>
